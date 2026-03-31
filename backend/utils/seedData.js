@@ -24,7 +24,7 @@ const products = [
   {
     name: "Classic White Sneakers",
     image:
-      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1608379894453-c6b729b05596?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     brand: "UrbanWalk",
     category: "Footwear",
     description: "Comfortable everyday sneakers with premium cushioning.",
@@ -74,7 +74,7 @@ const products = [
   {
     name: "Ceramic Coffee Mug Set",
     image:
-      "https://images.unsplash.com/photo-1514228742587-6b1558fcf93a?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1591728308898-0d025b4af29e?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     brand: "HomeNest",
     category: "Home",
     description: "Set of 4 premium ceramic mugs for tea, coffee and hot chocolate.",
@@ -94,7 +94,7 @@ const products = [
   {
     name: "Running Track Pants",
     image:
-      "https://images.unsplash.com/photo-1565814636199-ae8133055c1c?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1719473466836-ff9f5ebe0e1b?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     brand: "StrideFit",
     category: "Fashion",
     description: "Lightweight, breathable track pants designed for all-day comfort.",
@@ -114,7 +114,7 @@ const products = [
   {
     name: "Stainless Steel Water Bottle",
     image:
-      "https://images.unsplash.com/photo-1523362628745-0c100150b504?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1544003484-3cd181d17917?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     brand: "HydroPeak",
     category: "Accessories",
     description: "Leak-proof insulated bottle that keeps drinks cold for 24 hours.",
@@ -134,7 +134,7 @@ const products = [
   {
     name: "Organic Cotton Bedsheet Set",
     image:
-      "https://images.unsplash.com/photo-1616628182509-6f5d8a84e4a8?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1663247131274-ecbf38ec087c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     brand: "DreamSoft",
     category: "Home",
     description: "Soft breathable bedsheet set made from 100% organic cotton.",
