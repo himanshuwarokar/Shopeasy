@@ -14,13 +14,21 @@ connectDB();
 
 const app = express();
 
+const allowedOrigins = process.env.CLIENT_URL
+  ? process.env.CLIENT_URL.split(",").map((url) => url.trim())
+  : ["http://localhost:5173"];
+
 app.use(
   cors({
-    origin: process.env.CLIENT_URL || "http://localhost:5173"
+    origin: allowedOrigins
   })
 );
 app.use(express.json());
 app.use(morgan("dev"));
+
+app.get("/", (req, res) => {
+  res.json({ message: "Shopeasy backend is live. Use /api routes." });
+});
 
 app.get("/api/health", (req, res) => {
   res.json({ message: "Shopeasy API is running" });
