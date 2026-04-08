@@ -18,23 +18,17 @@ const readCachedProducts = () => {
 const HomePage = () => {
   const [products, setProducts] = useState(readCachedProducts);
   const [loading, setLoading] = useState(products.length === 0);
-  const [isSlow, setIsSlow] = useState(false);
-  const [error, setError] = useState("");
 
   const fetchProducts = async () => {
     setLoading(true);
-    setIsSlow(false);
-    const slowNoticeTimer = setTimeout(() => setIsSlow(true), 4500);
 
     try {
       const { data } = await api.get("/products");
       setProducts(data);
       localStorage.setItem(PRODUCTS_CACHE_KEY, JSON.stringify(data));
-      setError("");
     } catch (err) {
-      setError(err.response?.data?.message || "Failed to load products");
+      console.error("Failed to load products", err);
     } finally {
-      clearTimeout(slowNoticeTimer);
       setLoading(false);
     }
   };
@@ -51,13 +45,6 @@ const HomePage = () => {
       </div>
 
       {loading && !products.length && <p>Loading products...</p>}
-      {loading && !!products.length && <p className="muted">Refreshing products...</p>}
-      {loading && isSlow && (
-        <p className="muted">
-          First request on Render can take 30-60 seconds while backend wakes up.
-        </p>
-      )}
-      {error && <p className="error">{error}</p>}
       {!loading && !products.length && <p>No products found.</p>}
 
       <div className="grid">
